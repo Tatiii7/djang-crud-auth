@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bienvenido{% endblock %}</title>
+    
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <style>
+
+        body {
+            background: linear-gradient(to right, #320b4a, #8e44ad);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+     
+        .Container {
+            margin:flex;
+            display: flex;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+            align-items: center;
+            flex-direction: column;
+            padding: 20px 60px 20px 60px;
+        }
+
+        .containerBox {
+            margin:auto;
+            display: flex;
+            width: 1500px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        .form-section {
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+            padding: 10px 90px 10px 80px;
+            align-items: auto;
+            justify-content: center;
+            height: 750px;
+        }
+        .info-section {
+            text-align: center;
+            width: 60%;
+            background: linear-gradient(to bottom, #7a1fa2, #9b59b6);
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 80px;
+            flex-direction: column;
+            font-weight: 20px;
+            justify-content: center;
+        }
+        .info-section h2 {
+            font-weight: 600;
+        }
+        .info-section img {
+            width: 80px;
+            margin-top: 20px;
+        }
+        .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem; 
+        margin-top: 1.5rem;
+        }
+
+        .btn {
+            margin:40px;
+            border-radius: 25px; 
+            background-color: #800080; 
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #5a005a; 
+        }
+        .titleText {
+            font-family: 'Poppins', sans-serif; 
+            font-size: 2.5rem;
+            color: #6A0DAD; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+        <div class="form-section">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>

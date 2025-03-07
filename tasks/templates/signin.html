@@ -1,0 +1,26 @@
+<form  action="/signin/" method="POST">
+    {% extends 'base.html' %} 
+    {% block content %}
+    <div class="containerBox">
+        <div class="form-section">
+        <h3>Iniciar sesión</h3>
+        <form>
+            <label>Email</label>
+            <input type="email" placeholder="Correo electrónico">
+            <label>Contraseña</label>
+            <input type="password" placeholder="Contraseña">
+            <button class="btn">Entrar</button>
+        </form>
+        <p>¿No tienes cuenta? <a href="{% url 'signup' %}">Entra aquí</a></p>
+    </div>
+    
+    <div class="info-section">
+        <h2>Api de <strong>recomendaciones</strong></h2>
+        <img src="rollito.png" alt="Rollito">
+        <div class="toggle-switch"></div>
+    </div>
+</div>
+
+    {% endblock %}
+    
+</form>

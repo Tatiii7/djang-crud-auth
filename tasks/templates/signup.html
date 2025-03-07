@@ -1,0 +1,14 @@
+<form action="/signup/" method="POST">
+    {% extends 'base.html' %}
+    {% block content %}
+    {% csrf_token %}
+   
+    <div class="container center" style="margin-top: 100px;">
+        <h3>Registrarse</h3>
+        {{form.as_p}}
+        
+        <a href="{% url 'generos' %}" class="btn waves-effect waves-light deep-purple lighten-1 btn-large oval-button">Sign Up</a>
+        
+    {% endblock %}
+
+</form>
